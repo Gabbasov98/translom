@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="color-scheme" content="light only">
+    <!--    <base href="https://test.translom-market.ru">-->
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;onload=onYmapsReady&amp;apikey=a7c06c12-93c9-4d25-ab48-b373c359fcb2"></script>
+    <!--    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=9133eb49-3a97-4b2d-90be-6b80a97a5036"></script>-->
+    <link href="https://test.translom-market.ru//bitrix/js/ui/design-tokens/dist/ui.design-tokens.min.css?170782276921683" type="text/css" rel="stylesheet">
+    <link href="https://test.translom-market.ru//bitrix/js/ui/fonts/opensans/ui.font.opensans.min.css?17078227722320" type="text/css" rel="stylesheet">
+    <link href="https://test.translom-market.ru//bitrix/js/main/popup/dist/main.popup.bundle.min.css?170782276725089" type="text/css" rel="stylesheet">
+    <link href="https://test.translom-market.ru//bitrix/cache/css/m1/market/template_fa2dd9ce0e5802964b42aecd99061b91/template_fa2dd9ce0e5802964b42aecd99061b91_v1.css?1724569913204367" type="text/css" data-template-style="true" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Главная</title>
+</head>
+
+
+<style>
+    .wrapper a {
+        font-size: 30px;
+        text-transform: capitalize;
+    }
+
+    .wrapper button {
+        margin-bottom: 25px;
+        width: 300px;
+        height: 45px;
+    }
+</style>
+
+<body class="m-page">
+
+    <div class="wrapper" style="padding: 50px;">
+        <a href="index.html" style="display: block; margin-bottom: 20px;">
+            Главная
+        </a>
+
+
+
+
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#quickOrder">
+            Быстрый заказ
+        </button>
+
+
+        <code>
+
+            @@include
+            ('components/page-blocks/_filter-slider.html',{ <br>
+            "start1":"0", <br>
+            "start2":"30000", <br>
+            "min":"1000", <br>
+            "max":"100000", <br>
+            })
+
+        </code>
+    </div>
+
+
+
+
+
+
+
+    <div class="modal" id="Modal">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__top">
+                <div class="text32 medium-text">
+                    Title
+                </div>
+                <button class="close-btn _close-modal">
+                    <img src="img/close.svg" alt="">
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!--  -->
+    <script src="https://test.translom-market.ru/bitrix/js/main/core/core.min.js?1707822768220366"></script>
+    <script src="https://test.translom-market.ru/bitrix/js/main/core/core_ajax.js"></script>
+    <script src="https://test.translom-market.ru/bitrix/js/main/core/core_promise.js"></script>
+    <script src="https://test.translom-market.ru/bitrix/js/main/polyfill/promise/js/promise.js"></script>
+    <script src="https://test.translom-market.ru/bitrix/js/main/loadext/loadext.js"></script>
+    <script src="https://test.translom-market.ru/bitrix/js/main/loadext/extension.js"></script>
+    <script src="https://test.translom-market.ru/bitrix/js/main/polyfill/promise/js/promise.js"></script>
+    <script src="https://test.translom-market.ru/bitrix/js/main/polyfill/find/js/find.js"></script>
+    <script src="https://test.translom-market.ru/bitrix/js/main/polyfill/includes/js/includes.js"></script>
+    <script src="https://test.translom-market.ru/bitrix/js/main/polyfill/matches/js/matches.js"></script>
+    <script src="https://test.translom-market.ru/bitrix/js/ui/polyfill/closest/js/closest.js"></script>
+    <script src="https://test.translom-market.ru/bitrix/js/main/polyfill/fill/main.polyfill.fill.js"></script>
+    <script src="https://test.translom-market.ru/bitrix/js/main/polyfill/find/js/find.js"></script>
+    <script src="https://test.translom-market.ru/bitrix/js/main/polyfill/matches/js/matches.js"></script>
+    <script src="https://test.translom-market.ru/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js"></script>
+    <script src="https://test.translom-market.ru/bitrix/js/main/core/core.js"></script>
+    <script src="https://test.translom-market.ru/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js"></script>
+    <script src="https://test.translom-market.ru/bitrix/js/main/lazyload/dist/lazyload.bundle.js"></script>
+    <script src="https://test.translom-market.ru/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js"></script>
+    <script src="https://test.translom-market.ru/bitrix/js/main/parambag/dist/parambag.bundle.js"></script>
+    <script src='https://test.translom-market.ru/local/templates/market/plugins/swiper/swiper.min.js'></script>
+    <script src='https://test.translom-market.ru/local/templates/market/js/jquery-3.6.0.min.js'></script>
+    <script src='https://test.translom-market.ru/local/templates/market/js/custom.js'></script>
+    <script src='https://test.translom-market.ru/local/templates/market/js/main.js'></script>
+    <script src='https://test.translom-market.ru/local/templates/market/public/runtime.68a0b4a7a5addf194634.js'></script>
+    <!--<script src='https://test.translom-market.ru/local/templates/market/public/2.cb0407d807e32bf4f5e1.js'></script>-->
+    <!--<script src='https://test.translom-market.ru/local/templates/market/public/4.66964d2a2b16ff931a31.js'></script>-->
+    <!--<script src='https://test.translom-market.ru/local/templates/market/public/5.52eac15d04f2bc50be94.js'></script>-->
+    <!--<script src='https://test.translom-market.ru/local/templates/market/public/6.2d645157b46254bd2112.js'></script>-->
+    <!--<script src='https://test.translom-market.ru/local/templates/market/public/7.fd24a6530918b088d160.js'></script>-->
+    <!--<script src='https://test.translom-market.ru/local/templates/market/public/8.486c5b70f80e0b1053aa.js'></script>-->
+    <!--<script src='https://test.translom-market.ru/local/templates/market/public/9.53c9a2d8b4d287168b15.js'></script>-->
+    <!--<script src='https://test.translom-market.ru/local/templates/market/public/12.1e2ba8c77ee88ce830d2.js'></script>-->
+    <!--<script src='https://test.translom-market.ru/local/templates/market/public/11.9a4f9fb5bab43edcce30.js'></script>-->
+    <!--<script src='https://test.translom-market.ru/local/templates/market/public/14.2f2e27408a7ca4518822.js'></script>-->
+    <!--<script src='https://test.translom-market.ru/local/templates/market/public/17.91e27f8ff4200417d252.js'></script>-->
+    <!--<script src='https://test.translom-market.ru/local/templates/market/public/21.646ef7c84f8c92754d72.js'></script>-->
+    <!--<script src='https://test.translom-market.ru/local/templates/market/public/24.7ad18d1d0a64c9711411.js'></script>-->
+    <!--<script src='https://test.translom-market.ru/local/templates/market/public/27.acd57c20304d6b4e529a.js'></script>-->
+    <!--<script src='https://test.translom-market.ru/local/templates/market/public/30.3c8479f8f393e7b4fe86.js'></script>-->
+    <!--<script src='https://test.translom-market.ru/local/templates/market/public/32.0aff2974e884b0f27a36.js'></script>-->
+    <!--<script src='https://test.translom-market.ru/local/templates/market/public/34.8dd25c4612cc4d429493.js'></script>-->
+    <!--<script src='https://test.translom-market.ru/local/templates/market/public/44.2c90e4573ccec7cb1a10.js'></script>-->
+    <!--<script src='https://test.translom-market.ru/local/templates/market/public/63.0e63e082c84649082db1.js'></script>-->
+    <!--<script src='https://test.translom-market.ru/local/templates/market/public/0.4264453c9da008e94ed8.js'></script>-->
+    <!--<script src='https://test.translom-market.ru/local/templates/market/public/3.20ecfd6344849378c7ff.js'></script>-->
+    <!--<script src='https://test.translom-market.ru/local/templates/market/public/41.6d4247b512123cab9d51.js'></script>-->
+    <!--<script src='https://test.translom-market.ru/local/templates/market/public/37.946cc70224d06c2cdd05.js'></script>-->
+    <!--<script src='https://test.translom-market.ru/local/templates/market/public/50.e8b2809a4d6f050cc8c9.js'></script>-->
+    <!--<script src='https://test.translom-market.ru/local/templates/market/public/10.84591afeeb21b532c199.js'></script>-->
+    <!--<script src='https://test.translom-market.ru/local/templates/market/public/13.2a365ab283c66b51558e.js'></script>-->
+    <!--<script src='https://test.translom-market.ru/local/templates/market/public/20.93b21ee50c9813350f4c.js'></script>-->
+    <!--<script src='https://test.translom-market.ru/local/templates/market/public/25.5967c344d8ce674f4f65.js'></script>-->
+    <!--<script src='https://test.translom-market.ru/local/templates/market/public/36.79cc6e5344791e195117.js'></script>-->
+    <!--<script src='https://test.translom-market.ru/local/templates/market/public/19.50536f5fa58773f839de.js'></script>-->
+    <!--<script src='https://test.translom-market.ru/local/templates/market/public/22.3703d67c1fbb6b9a7a7f.js'></script>-->
+    <!--<script src='https://test.translom-market.ru/local/templates/market/public/23.b1f01a9203dd19135540.js'></script>-->
+    <!--<script src='https://test.translom-market.ru/local/templates/market/public/38.3106524fc2cacdf40520.js'></script>-->
+    <!--<script src='https://test.translom-market.ru/local/templates/market/public/51.28871b83c169ad3d5383.js'></script>-->
+
+
+
+    <script src="https://test.translom-market.ru/bitrix/js/main/popup/dist/main.popup.bundle.min.js?170782276765492"></script>
+    <script src="https://test.translom-market.ru/bitrix/js/main/popup/dist/main.popup.bundle.min.js?170782276765492"></script>
+    <!--<script src="https://test.translom-market.ru//bitrix/cache/js/m1/market/template_bc563f2c20d57cf4ca1633b0c11bde5d/template_bc563f2c20d57cf4ca1633b0c11bde5d_v1.js?1724569913870195"></script>-->
+
+    <script src="js/main.min.js"></script>
+
+</body>
+
+</html>
